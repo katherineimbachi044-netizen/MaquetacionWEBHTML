@@ -1,0 +1,57 @@
+.footer{
+    background: var(--azul-noche);
+    color: #8a9bb0;
+    padding: 60px 5% 24px;
+}
+
+/*CSS Grid - 5 columnas, la primera más ancha*/
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr, 1fr,1fr,1fr,1fr; /*2fr = doble de ancho*/
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer h5 { color:var(--blanco); text-transform: uppercase; margin-bottom: 12px;}
+.footer ul { list-style: none;}
+.footer ul li { margin-bottom: 8px;}
+.footer ul a { color: #8a9bb0;}
+.footer ul a:hover { color: var(--blanco);}
+
+.badge-footer {
+    background: var(--amarillo);
+    color: var(--texto);
+    font-size: 0.65rem;
+    padding: 20px 8px;
+    border-radius: 20px; /*cápsula*/
+    margin-left: 6px;
+}
+
+/*barra inferior: legal izquierda, redes derecha*/
+.footer-inferior{
+    display: flex;
+    justify-content: space-between; /*empuja los grupos a los extremos*/
+    align-items: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-legal {display: flex; gap: 16px}
+.footer-legal a {color: #8a9bb0; font-size: 0.82rem;}
+.footer-legal a:hover {color: var(--blanco);}
+
+.footer-redes {display: flex; gap: 10px}
+.footer-redes a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%; /*circulo*/
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a9bb0;
+}
+
+.footer-redes a:hover {background: var(--azul); color: var(--blanco);}
+
+.footer-copy {text-align: center; color: rgba(255,255,255,0.03); padding-top: 12px;}
