@@ -6,7 +6,7 @@
 /*ocultar nav, buscador y botón en móvil*/
 .navbar-nav {display: none;} /*links ocultos*/
 .navbar-cta {display: none;} /*boton oculto*/
-.navbar-buscador {display: none;} /*buscador oculto*/
+.nav-buscador {display: none;} /*buscador oculto*/
 
 /*Hamburger visible*/
 .hamburger {
@@ -37,7 +37,7 @@
 
 /*TABLET 768px*/
 @media (min-width: 768px){
-    .nav-link -curso-icono {display: inline;}
+    .nav-link .curso-icono {display: inline;}
     .navbar {height: 64px;}
     .navbar-nav {display: flex; width: auto;}
     .navbar-cta {display: block;}

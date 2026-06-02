@@ -46,6 +46,13 @@ img {max-width: 100%; display: block;}
 ul {list-style: none;}
 
 /*CONTENEDOR CENTRADO*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+/*BOTONES GLOBALES*/
 .btn{
     display: inline-block;
     padding: 12px 24px;
@@ -67,6 +74,7 @@ ul {list-style: none;}
     background-color: #1a5fd4;
     transform: translateY(-2px);
 }
+
 
 .hero{
     display: grid;

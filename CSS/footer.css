@@ -7,7 +7,7 @@
 /*CSS Grid - 5 columnas, la primera más ancha*/
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr, 1fr,1fr,1fr,1fr; /*2fr = doble de ancho*/
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /*2fr = doble de ancho*/
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -28,7 +28,7 @@
 }
 
 /*barra inferior: legal izquierda, redes derecha*/
-.footer-inferior{
+.footer-inferior {
     display: flex;
     justify-content: space-between; /*empuja los grupos a los extremos*/
     align-items: center;
