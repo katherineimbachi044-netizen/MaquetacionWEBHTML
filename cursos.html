@@ -1,60 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-
     <link rel="stylesheet" href="css/estilo_index.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
 </head>
 <body>
-
-<section class="cursos-destacados">
-
-    <div class="contenedor">
-
-        <span class="subtitulo">CURSOS DESTACADOS</span>
-
-        <h2>Encuentra el curso perfecto para ti</h2>
-
-        <div class="grid-cursos">
-
-            <div class="curso">
-                <img src="IMG/curso1.jpg" alt="Python">
-                <div class="contenido-curso">
-                    <h3>Bootcamp Completo de Python</h3>
-                    <p>10 lecciones · 3h 25m</p>
-                    <span class="precio">$99.99</span>
-                    <button>Vista previa</button>
-                </div>
-            </div>
-
-            <div class="curso">
-                <img src="IMG/curso2.jpg" alt="Illustrator">
-                <div class="contenido-curso">
-                    <h3>Adobe Illustrator para Principiantes</h3>
-                    <p>8 lecciones · 7h 59m</p>
-                    <span class="precio">$119.99</span>
-                    <button>Vista previa</button>
-                </div>
-            </div>
-
-            <div class="curso">
-                <img src="IMG/curso3.jpg" alt="Vue">
-                <div class="contenido-curso">
-                    <h3>Introducción a Vue.js</h3>
-                    <p>25 lecciones · 17h 46m</p>
-                    <span class="precio">$129.99</span>
-                    <button>Vista previa</button>
-                </div>
-            </div>
-
+       <section class="cursos-destacados container">
+        
+        <div class="section-title">
+            <span class="categoria-tag">MÁS VENDIDO</span>
+            <h2>Cursos destacados</h2>
+            <p>Descubre tu programa perfecto en nuestros cursos.</p>
         </div>
-
-    </div>
-
-</section>
-
+    
+        <div class="cursos-grid">
+            <div class="card-curso">
+                <div class="card-banner">Más vendido</div>
+                <div class="card-body">
+                    <div class="rating">★★★★★ <span>4.91 (1.5k+ opiniones)</span></div>
+                    <span class="categoria-tag">CÓDIGO</span>
+                    <h3>Bootcamp completo de Python: Ve de cero a experto en Python</h3>
+                    <div class="meta-info">
+                        <span>10 lecciones</span>
+                        <span>3h 25m</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="precio">$90.000</span>
+                        <a href="#" class="btn-preview">Vista previa</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-curso">
+                <div class="card-body">
+                    <div class="rating">★★★★★ <span>4.95 (1k+ opiniones)</span></div>
+                    <span class="categoria-tag">DISEÑO E ILUSTRACIÓN</span>
+                    <h3>Desde el principio: Adobe Illustrator para principiantes</h3>
+                    <div class="meta-info">
+                        <span>8 lecciones</span>
+                        <span>7h 59m</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="precio">$225.00</span>
+                        <a href="#" class="btn-preview">Vista previa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

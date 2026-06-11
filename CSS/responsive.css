@@ -1,78 +1,70 @@
-/*BASE MOVIL*/
 
-/*Navbar: solo logo + hamburger en la misma fila*/
-.navbar {padding: 12px 5%; height: auto;}
+@media (max-width: 768px) {
+    .navbar {padding: 12px 5%; height: auto;}
 
-/*ocultar nav, buscador y botón en móvil*/
-.navbar-nav {display: none;} /*links ocultos*/
-.navbar-cta {display: none;} /*boton oculto*/
-.nav-buscador {display: none;} /*buscador oculto*/
+    .navbar-nav {display: none;}
+    .navbar-cta { display: none;}
+    .nav-buscador {display: none;}
 
-/*Hamburger visible*/
-.hamburger {
-    display: block;
-    background: none; border: 1px solid var(--borde);
-    border-radius: var(--radio); padding: 6px 12px;
-    font-size: 1.2rem; cursor:pointer
+    .hamburger {
+        display: block;
+        background: none;
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        padding: 6px 12px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    .navbar-nav.abierto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 12px 0;
+        border-top: 1px solid var(--borde);
+    }
+
+    .nav-link .curso-icono {display: none;}
+
+    .hero {grid-template-columns: 1fr; padding: 40px 5%; text-align: center;}
+    .hero-imagen {display: none;}
+    .hero-contenido { padding: 0;}
+    .programas-grid {grid-template-columns: 1fr;}
+    .cursos-grid {grid-template-columns: 1fr;}
+    .expertos { grid-template-columns: 1fr; gap: 30px;}
+    .form-row {flex-direction: row;}
+    .footer-grid {grid-template-columns: 1fr;gap: 24px; }
+    .footer-inferior {flex-direction: column; gap: 16px;text-align: center;}
 }
 
-/*menu abierto al hacer clic en hamburger*/
-.navbar-nav.abierto {
-    display: flex;
-    flex-direction: column; /*links en columna*/
-    width: 100%;
-    padding: 12px 0;
-    border-top: 1px solid var(--borde);
-}
-
-/*oculta el icono de Cursos solo en movil*/
-.nav-link .curso-icono {display: none;}
-
-/*Hero y footer en 1 columna*/
-.hero {grid-template-columns: 1fr; padding: 40px 5%;}
-.hero-imagen {display: none;}
-.hero-contenido {padding: 0;}
-.footer-grid {grid-template-columns: 1fr; gap:24px}
-.footer-inferior {flex-direction: column; gap: 16px; text-align: center;}
-
-/*TABLET 768px*/
-@media (min-width: 768px){
-    .nav-link .curso-icono {display: inline;}
+/* --- MEDIA QUERY: REGLAS PARA TABLET --- */
+@media (min-width: 768px) {
     .navbar {height: 64px;}
-    .navbar-nav {display: flex; width: auto;}
-    .navbar-cta {display: block;}
-    .nav-buscador {display: flex;}
+    .navbar-nav { display: flex;width: auto;}
+    .navbar-cta { display: block; }
+    .nav-buscador { display: flex;}
     .hamburger {display: none;}
-    .hero {grid-template-columns: 45% 55%; padding: 0 5%;}
-    .hero-imagen {display: flex;}
-    .hero-contenido {padding: 60px 0 60px 40px;}
-    .footer-grid {grid-template-columns: 1fr 1fr;}
-    .footer-inferior {flex-direction: row;}
+    .hero {grid-template-columns: 45% 55%; padding: 0 5%; text-align: left;}
+    .hero-imagen { display: flex;}
+    .hero-contenido { padding: 60px 0 60px 40px; }
+    .programas-grid { grid-template-columns: repeat(2, 1fr); }
+    .cursos-grid { grid-template-columns: repeat(2, 1fr); }
+    .expertos { grid-template-columns: 1fr 1fr;}
+    .form-row { flex-direction: row;}
+    .footer-grid {  grid-template-columns: 1fr 1fr;}
+    .footer-inferior { flex-direction: row;}
 }
 
-/*DESKTOP 1024px*/
-@media (min-width: 1024px){
-    .footer-grid {grid-template-columns: 2fr 1fr 1fr 1fr 1fr;}
-    .nav-link .curso-icono {display: inline;}
+
+@media (min-width: 1024px) {
+    .programas-grid { grid-template-columns: repeat(4, 1fr); }
+    .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr 1fr;}
 }
+@media (max-width: 768px){
 
-
-@media (max-width:768px){
-
-    .grid-cursos{
-        grid-template-columns:1fr;
-    }
-
-}
-
-@media(max-width:768px){
-
-    .resumen-grid{
-        grid-template-columns:1fr;
-    }
-
-    .instructor-grid{
-        grid-template-columns:1fr;
+    .programas-grid{
+        grid-template-columns: 1fr;
     }
 
 }
